@@ -60,7 +60,7 @@ while($row = mysqli_fetch_assoc($query1)){
  ?>
  <section> 
  <div class="container">
-  <div class="card">
+  <div class="card" style="width:900px;">
     <div class="row ">
       <div class="col-sm-4">
         <img  > <?php echo ' <img style = "width: 300px; height: 190px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($Image).'"/> ' ; ?>
@@ -110,7 +110,7 @@ elseif ($result_count1) {
  ?>
  <section> 
  <div class="container">
-  <div class="card">
+  <div class="card" style="width:900px;">
     <div class="row ">
       <div class="col-sm-4">
         <img  > <?php echo ' <img style = "width: 300px; height: 190px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($Image).'"/> ' ; ?>
