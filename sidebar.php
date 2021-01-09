@@ -26,7 +26,7 @@
 <div id="mySidepanel" class="sidepanel" style="margin-top:4.8%">
   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
   <div style="margin-top: 10%;">
-  <a href="#" class="active">About</a>
+  <a href="#" class="active">webdev</a>
   <a href="#" class="active">Services</a>
   <a href="#" class="active">Clients</a>
   <a href="#" class="active">Contact</a>

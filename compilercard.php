@@ -1,95 +1,166 @@
+<?php
+ $page = "compilercard.php";
+ include 'NavBar/header.php' ?>
+ <?php include 'sidebar.php' ?>
+
+ <?php
+
+if(isset($_POST["keywords"]) && $_POST["keywords"] != '')
+ {
+  $k = trim($_POST["keywords"]);
+  $k = strtolower($k);
+    $keywords = explode(' ', $k); 
+    
+   $query_string = "SELECT * FROM compilers WHERE ";
+   $display_words = "";
+   $keywords = explode(' ', $k); 
+   foreach($keywords as $word){
+   $query_string .= " keywords LIKE '%".$word."%'  OR ";
+    $display_words .= $word." ";
+    }
+      $query_string = substr($query_string, 0, strlen($query_string) - 3);
+       
+       
+
+?>
+
+<?php 
+$Connection=mysqli_connect('localhost','root','');
+$Selected= mysqli_select_db($Connection,'engineering_buddy');
+
+  $query = mysqli_query($Connection, $query_string);
+  $result_count = mysqli_num_rows($query);
 
 
+if ($result_count){
 
-   <?php
-     $page = "compilercard.php";
-    include 'NavBar/header.php' ?>
-    <?php include 'sidebar.php' ?> 
+$i=0;
+while($row = mysqli_fetch_assoc($query)){
+  $i++;
+  $name=$row['name'];
+  $Description=$row['description'];
+  $Link=$row['link'];
+  $image=$row['image'];
+  $category=$row['category'];
+  $rank=$row['rank'];
+
+ $newstring = $image ; 
+
+$newstring = substr($newstring, 0, strlen($newstring) - 17);
+$newstring = substr($newstring, 32, strlen($newstring) - 0);
+
+$image = "https://drive.google.com/thumbnail?id=".$newstring;
+
+?>
 
 <section>
 <div class="container">
   <div class="card">
 <div class="row">
 <div class="col-lg-12 col-md-6">
-  <h1 style="padding: 10px;">1.Google Chrome</h1>
-  <img src=" https://drive.google.com/thumbnail?id=1eWw5Qk4JkTN_LJBTOfyOBaVgtM35-Vqz" alt="Denim Jeans" style="width:100%; height: auto; padding: 10px;">
-  <p id="main-content">The Visual Studio IDE is one of the most popular and best IDE web development options available. It uses AI to learn from your edits as you code so it can finish your sentences – er, lines of code.
-<br>
-On top of that, you can collaborate with your team, live, when you’re editing and debugging. You can also share servers, terminals, and comments.
-<br>
-Visual Studio supports web, mobile, app, and game development, ASP.NET, Python, Node.js, C++, Unity as well as support for Azure.
-<br>
-You can also create development environments in the cloud and a lot more while being available for Windows, Mac, Android, iOS, web, and in the cloud.</p>
+  <h2><?php echo $i;?>)  <?php echo $name; ?> </h2> 
+  <img src="<?php echo $image; ?>" alt="Denim Jeans" style="width:490px; height: 350px; padding: 10px;padding-left:20%; margin-bottom: 10px;">
+  <p id="main-content"><?php echo $Description; ?></p>
   
 </div>
-<!-- <div class="card col-lg-3 col-md-6">
-  <img src="nord.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>NORD VPN</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
+
 </div>
-<div class="card col-lg-3 col-md-6">
-  <img src="nord.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>NORD VPN</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
-</div>
-<div class="card col-lg-3 col-md-6">
-  <img src="nord.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>NORD VPN</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
-</div>  -->
+<button type="button" class="download-button"><a href="<?php echo $Link; ?>">Download</a></button>
 </div>
 </div>
+</section>
+<div style="margin-bottom:15px "></div>
+
+<?php  
+ 
+ ?>
+
+
+
+</tr>
+
+
+
+<?php }
+}
+else
+{
+  $Keywords_array = array('vlc','media','player','mediaplayer','mozila','edge','firefox','browsing','browser','google','uc','opera','safari','keepnote','notes','must','whatsapp','telegram','messenger','idm','download','mp3','converter','games','epic','gta5','fortnite','steam','chrome');
+  $num =  count($Keywords_array) ;
+  $i = 0;
+  $Keywords1 =  $keywords[0];
+  
+
+  while ($i<$num) {
+     $string1 = $Keywords_array[$i]; 
+     $string2 = $keywords[0] ;
+ similar_text( $string1, $string2, $percent);
+  if ($percent>60) {
+    $Keywords1 = $string1;
+  
+
+  
+  }
+  $i = $i + 1;
+  
+  }
+
+
+ $Variable =  $Keywords1;
+$ViewQuery1="SELECT * 
+            FROM softwares
+            Where keywords LIKE '%".$Variable."%' " ;
+
+$Execute1=$Connection->query($ViewQuery1);
+
+
+while($DataRows=mysqli_fetch_array($Execute1)){
+  $name=$DataRows['name'];
+  $Description=$DataRows['description'];
+  $Link=$DataRows['link'];
+  $icon=$DataRows['icon'];
+  $category=$DataRows['category'];
+?>
+
+
+<section>
+  <div class="container">
+  <div class="card software">
+    <div class="row">
+      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
+       <img   > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
+      </div>
+      <div class="col-sm-10">
+        <!-- <div class="card-block"> -->
+                      <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
+                      <small class="text-muted"><?php echo $category; ?> </small>
+          <p id="card-spacing"><?php echo $Description; ?> </p>
+          
+        </div>
+         
+      </div>
+
+              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
+            <button type="button" class="download-button"><a href="<?php echo $Link; ?>"></a> Download</button>
+</div>
+          
+  </div>
+   <div style="padding:10px;"></div>
 </div>
 </section>
 
-<section>
-<div class="container">
-  <div class="card">
-<div class="row">
-<div class="col-lg-12 col-md-6">
-  <h1 style="padding: 10px;">1.Google Chrome</h1>
-  <img src=" https://drive.google.com/thumbnail?id=1eWw5Qk4JkTN_LJBTOfyOBaVgtM35-Vqz" alt="Denim Jeans" style="width:100%; height: auto; padding: 10px;">
-  <p id="main-content">The Visual Studio IDE is one of the most popular and best IDE web development options available. It uses AI to learn from your edits as you code so it can finish your sentences – er, lines of code.
-<br>
-On top of that, you can collaborate with your team, live, when you’re editing and debugging. You can also share servers, terminals, and comments.
-<br>
-Visual Studio supports web, mobile, app, and game development, ASP.NET, Python, Node.js, C++, Unity as well as support for Azure.
-<br>
-You can also create development environments in the cloud and a lot more while being available for Windows, Mac, Android, iOS, web, and in the cloud.</p>
+<?php }
+}
+
+
+
+?>
   
-</div>
-<!-- <div class="card col-lg-3 col-md-6">
-  <img src="nord.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>NORD VPN</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
-</div>
-<div class="card col-lg-3 col-md-6">
-  <img src="nord.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>NORD VPN</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
-</div>
-<div class="card col-lg-3 col-md-6">
-  <img src="nord.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>NORD VPN</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
-</div>  -->
-</div>
-</div>
-</div>
-</section>
-<br>
+<?php
+ }
+ ?>
+
+
 
    <?php
      
