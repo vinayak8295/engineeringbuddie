@@ -28,7 +28,6 @@
     $side4 = "Must Have";
     $side5 = "Browsers";
     $side6 = "Games";
-    $page1 = "getSoftware.php";
    include 'sidebar.php' ?>
 
 
@@ -194,110 +193,6 @@ while($DataRows=mysqli_fetch_array($Execute1)){
  else
 {?>
   <section>
-  <div class="container">
-  <div class="card software">
-    <div class="row">
-      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
-        <img src="https://drive.google.com/thumbnail?id=1448axfXVFoi0izt17KZAcrellTl7qcVx" alt="Denim Jeans">
-      </div>
-      <div class="col-sm-10">
-        <!-- <div class="card-block"> -->
-                      <h1 id="card-spacing" class="card-title"> VLC </h1>
-                      <small class="text-muted">STREAMING </small>
-          <p id="card-spacing">SOUIUSGDUGAG ASGIDHIAHSIO SAFHIOHWRA SHAPHDPHAWPHDH HASOHDH </p>
-          
-        </div>
-         
-      </div>
-
-              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="https//www.google.com"></a> Download</button>
-</div>
-          
-  </div>
-   <div style="padding:10px;"></div>
-</div>
-</section>
-
-<section>
-  <div class="container">
-  <div class="card software">
-    <div class="row">
-      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
-        <img src="https://drive.google.com/thumbnail?id=1448axfXVFoi0izt17KZAcrellTl7qcVx" alt="Denim Jeans">
-      </div>
-      <div class="col-sm-10">
-        <!-- <div class="card-block"> -->
-                      <h1 id="card-spacing" class="card-title"> VLC </h1>
-                      <small class="text-muted">STREAMING </small>
-          <p id="card-spacing">SOUIUSGDUGAG ASGIDHIAHSIO SAFHIOHWRA SHAPHDPHAWPHDH HASOHDH </p>
-          
-        </div>
-         
-      </div>
-
-              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="https//www.google.com"></a> Download</button>
-</div>
-          
-  </div>
-   <div style="padding:10px;"></div>
-</div>
-</section>
-
-<section>
-  <div class="container">
-  <div class="card software">
-    <div class="row">
-      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
-        <img src="https://drive.google.com/thumbnail?id=1448axfXVFoi0izt17KZAcrellTl7qcVx" alt="Denim Jeans">
-      </div>
-      <div class="col-sm-10">
-        <!-- <div class="card-block"> -->
-                      <h1 id="card-spacing" class="card-title"> VLC </h1>
-                      <small class="text-muted">STREAMING </small>
-          <p id="card-spacing">SOUIUSGDUGAG ASGIDHIAHSIO SAFHIOHWRA SHAPHDPHAWPHDH HASOHDH </p>
-          
-        </div>
-         
-      </div>
-
-              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="https//www.google.com"></a> Download</button>
-</div>
-          
-  </div>
-   <div style="padding:10px;"></div>
-</div>
-</section>
-
-<section>
-  <div class="container">
-  <div class="card software">
-    <div class="row">
-      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
-        <img src="https://drive.google.com/thumbnail?id=1448axfXVFoi0izt17KZAcrellTl7qcVx" alt="Denim Jeans">
-      </div>
-      <div class="col-sm-10">
-        <!-- <div class="card-block"> -->
-                      <h1 id="card-spacing" class="card-title"> VLC </h1>
-                      <small class="text-muted">STREAMING </small>
-          <p id="card-spacing">SOUIUSGDUGAG ASGIDHIAHSIO SAFHIOHWRA SHAPHDPHAWPHDH HASOHDH </p>
-          
-        </div>
-         
-      </div>
-
-              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="https//www.google.com"></a> Download</button>
-</div>
-          
-  </div>
-   <div style="padding:10px;"></div>
-</div>
-</section>
-
-<section>
   <div class="container">
   <div class="card software">
     <div class="row">

@@ -60,7 +60,7 @@ background-color: #D8D8D8;
 
 .sidepanel {
   height: 100%; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 11.69%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   /*z-index: 1; *//* Stay on top */
   top: 0;
@@ -68,7 +68,7 @@ background-color: #D8D8D8;
   background-color: #D8D8D8; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px; /* Place content 60px from the top */
-  transition: 0.3s; /* 0.5 second transition effect to slide in the sidepanel */
+ /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
@@ -174,7 +174,7 @@ background-color: #D8D8D8;
 
  </style>
 </head>
-<body onload="openNav()">
+<body>
 
  
 
@@ -194,7 +194,7 @@ background-color: #D8D8D8;
         <input type="search" class="search-hover d-flex justify-content-end searchbar" name="keywords" aria-label="search" placeholder="search here...">
     </form>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="www.youtube.com">Home</a>
+          <a class="nav-link active" aria-current="page" href="FirstPage/firstpage.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="udemy.php">Top Courses</a>
