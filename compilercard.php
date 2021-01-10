@@ -87,7 +87,7 @@ $image = "https://drive.google.com/thumbnail?id=".$newstring;
 </div>
 </div>
 </section>
-<div style="margin-bottom:15px "></div>
+<div style="margin-bottom:15px"></div>
 
 
 
