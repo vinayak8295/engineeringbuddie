@@ -217,7 +217,7 @@ background-color: #D8D8D8;
         </li>
         
         <li class="nav-item">
-        <a class="nav-link active" href="contact/contact.php">Contact US</a></li>
+        <a class="nav-link active" href="contact/contact.php" target  = "_blank">Contact US</a></li>
 
       </ul>
 
