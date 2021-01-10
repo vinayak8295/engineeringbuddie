@@ -7,7 +7,7 @@
     $side1 = "Web Development";
     $side2 = "Ds Algo";
     $side3 = "Python";
-    $side4 = "C++";
+    $side4 = "Machine Learning";
     $side5 = "Java";
     $side6 = "App Development";
     $page1 = "getudemy.php";
