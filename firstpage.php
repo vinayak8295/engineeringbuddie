@@ -10,8 +10,6 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="NavBar/NavBar.css">
-<link rel="stylesheet" type="text/css" href="NavBAr/firstpage.css">
 </head>
 <body >
 <?php include 'NavBar/header.php' ?>
@@ -28,13 +26,13 @@
   <div class="carousel-inner">
     <p>abcd</p>
     <div class="carousel-item active">
-      <img class="d-block w-100" src="visual.jpg" alt="First slide">
+      <img class="d-block w-100" src="FirstPage/visual.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="visual.jpg" alt="Second slide">
+      <img class="d-block w-100" src="FirstPage/visual.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="visual.jpg" alt="Third slide">
+      <img class="d-block w-100" src="FirstPage/visual.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,7 +70,7 @@
 </div>
 
     <div class="col-lg-3" style="margin-left: -30px;">
-<div class="card" style="width:300px; height:420px; background: url(taylor.png) no-repeat; ">
+<div class="card" style="width:300px; height:420px; background: url(FirstPage/taylor.png) no-repeat; ">
   <!-- <img class="card-img-top" src="antivirus.jpg" alt="Card image cap"> -->
   <div class="card-body">
     <h5 class="card-title display-4" style="text-align: center;"><strong>Softwares</strong></h5>
@@ -92,7 +90,7 @@
 </div>
 </div>
    <div class="col-lg-3" style="margin-left: -30px;" >
-<div class="card" style="width:300px; height:420px; background: url(VPN.jpg) no-repeat; background-size: ">
+<div class="card" style="width:300px; height:420px; background: url(FirstPage/VPN.jpg) no-repeat; background-size: ">
   <!-- <img class="card-img-top" src="antivirus.jpg" alt="Card image cap"> -->
   <div class="card-body">
     <h5 class="card-title display-4" style="text-align: center;"><strong>What to watch?</strong></h5>
