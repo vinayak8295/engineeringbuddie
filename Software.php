@@ -21,7 +21,14 @@
    <?php
      $page = "Software.php";
     include 'NavBar/header.php' ?> 
-   <?php include 'sidebar.php' ?>
+   <?php 
+    $side1 = "Google Chrome";
+    $side2 = "VLC";
+    $side3 = "Streaming";
+    $side4 = "Must Have";
+    $side5 = "Browsers";
+    $side6 = "Games";
+   include 'sidebar.php' ?>
 
 
 

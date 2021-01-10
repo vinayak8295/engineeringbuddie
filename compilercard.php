@@ -1,7 +1,14 @@
 <?php
  $page = "compilercard.php";
  include 'NavBar/header.php' ?>
- <?php include 'sidebar.php' ?>
+ <?php 
+  $side1 = "TurboC++";
+    $side2 = "VScode";
+    $side3 = "IntelliJ IDEA";
+    $side4 = "Dreamweaver";
+    $side5 = "PyCharm";
+    $side6 = "MySQL";
+ include 'sidebar.php' ?>
 
  <?php
 
@@ -20,6 +27,7 @@ if(isset($_POST["keywords"]) && $_POST["keywords"] != '')
     }
       $query_string = substr($query_string, 0, strlen($query_string) - 3);
        
+       $query_string .= " GROUP BY name ";
        
 
 ?>
@@ -109,7 +117,8 @@ else
  $Variable =  $Keywords1;
 $ViewQuery1="SELECT * 
             FROM softwares
-            Where keywords LIKE '%".$Variable."%' " ;
+            Where keywords LIKE '%".$Variable."%' 
+            GROUP BY name " ;
 
 $Execute1=$Connection->query($ViewQuery1);
 

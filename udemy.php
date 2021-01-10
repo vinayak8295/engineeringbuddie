@@ -3,7 +3,14 @@
    <?php
      $page = "udemy.php";
     include 'NavBar/header.php' ?> 
-   <?php include 'sidebar.php' ?>
+   <?php 
+    $side1 = "Web Development";
+    $side2 = "Ds Algo";
+    $side3 = "Python";
+    $side4 = "C++";
+    $side5 = "Java";
+    $side6 = "App Development";
+   include 'sidebar.php' ?>
 
 
 
