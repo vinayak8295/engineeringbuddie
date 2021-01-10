@@ -37,9 +37,9 @@
 
 <?php
 
-if(isset($_POST["keywords"]) && $_POST["keywords"] != '')
+if(isset($_GET["keywords"]) && $_GET["keywords"] != '')
  {
-  $k = trim($_POST["keywords"]);
+  $k = trim($_GET["keywords"]);
   $k = strtolower($k);
     $keywords = explode(' ', $k); 
     
