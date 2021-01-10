@@ -22,7 +22,8 @@
 
  
 <link rel="stylesheet" type="text/css" href="compilercard.css"> 
-<link rel="stylesheet" type="text/css" href="udemy.css"> 
+<link rel="stylesheet" type="text/css" href="udemy.css">
+<link rel="stylesheet" type="text/css" href="firstpage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
  <style >
    .navbar-custom{
@@ -114,8 +115,15 @@ background-color: #D8D8D8;
 #mainnavbar .nav-link:hover{
   color: red;
 }
-.dorpdown-menu{
-  background-color: #D8D8D8;
+#dropdown-menu{
+ 
+  position: absolute;
+  background-color:#8A0868;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+}
 }
 
 .searchbar{
@@ -171,6 +179,7 @@ background-color: #D8D8D8;
     left: 0%;
     padding: 10px;
 }
+.dropdown:hover .dropdown-menu {display: block;}
 
  </style>
 </head>
@@ -180,7 +189,7 @@ background-color: #D8D8D8;
 
   <nav id="mainnavbar" class="navbar navbar-expand-md navbar-dark fixed-top px-0 navbar-custom"  >
   <div class="container-fluid"> 
-     <a class="navbar-brand" style="font-family: 'Bungee Outline', cursive;"  href="#"><p><strong style="font-size: 30px;color:#8A0868; font-family: 'Audiowide', cursive;">E</strong><strong style="color: #6E6E6E; font-family: 'Audiowide', cursive;">gineering</strong><strong style="font-size: 30px; font-family: 'Audiowide', cursive;color: #8A0868">B</strong><strong style="font-family: 'Audiowide', cursive;color: #6E6E6E">uddy</strong></p>
+     <a class="navbar-brand" style="font-family: 'Bungee Outline', cursive;"  href="firstpage.php"><p><strong style="font-size: 30px;color:#8A0868; font-family: 'Audiowide', cursive;">E</strong><strong style="color: #6E6E6E; font-family: 'Audiowide', cursive;">gineering</strong><strong style="font-size: 30px; font-family: 'Audiowide', cursive;color: #8A0868">B</strong><strong style="font-family: 'Audiowide', cursive;color: #6E6E6E">uddy</strong></p>
 </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
       <span class="navbar-toggler-icon"></span>
@@ -194,14 +203,14 @@ background-color: #D8D8D8;
         <input type="search" class="search-hover d-flex justify-content-end searchbar" name="keywords" aria-label="search" placeholder="search here...">
     </form>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="FirstPage/firstpage.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="firstpage.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="udemy.php">Top Courses</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link active dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Softwares</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="compilercard.php">Best Compilers</a></li>
             <li><a class="dropdown-item" href="Software.php">Useful Softwares</a></li>
         </ul>
@@ -210,7 +219,7 @@ background-color: #D8D8D8;
           <a class="nav-link active dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Funtypes
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="movie.php">movie</a></li>
             <li><a class="dropdown-item" href="insta.php">memes</a></li>
           </ul>
