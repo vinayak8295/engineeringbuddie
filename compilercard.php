@@ -1,3 +1,5 @@
+
+<?php include 'NavBar/newscard.php' ?>
 <?php
  $page = "compilercard.php";
  include 'NavBar/header.php' ?>
