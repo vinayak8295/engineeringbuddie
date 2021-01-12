@@ -40,15 +40,16 @@ if($Connection){
  ?>
 
 
-
-
-
+<div class="card fixed-bottom" style="margin-left: 79%;margin-top: 60%;">
+<iframe src="https://discord.com/widget?id=742050523619917854&theme=light" width="300" height="270" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
   
-  <div class="card fixed-top" style="width: 320px; height: 400px; margin-top: 7%; margin-left: 75%; border: 2px solid black; float: right; ">
+  <div class="card fixed-top" style="width: 300px; height: 350px; margin-top: 6%; margin-left: 79%; border: 2px solid black; float: right; ">
 
 <?php
 
 while ($row=mysqli_fetch_assoc($result)) {
+  $id=$row['id'];
   $headline=$row['heading'];
   $image=$row['image'];
   $link=$row['link'];
