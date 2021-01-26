@@ -206,6 +206,9 @@ background-color: #D8D8D8;
           <a class="nav-link active" aria-current="page" href="firstpage.php">Home</a>
         </li>
         <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="techpage.php">Tech Geek</a> 
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" href="udemy.php">Top Courses</a>
         </li>
         <li class="nav-item dropdown">
