@@ -12,7 +12,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body >
-<?php include 'NavBar/header.php' ?>
+<?php include 'NavBar/header_firstpage.php' ?>
 
 
 <div class="container-fluid">
