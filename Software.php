@@ -195,16 +195,58 @@ while($DataRows=mysqli_fetch_array($Execute1)){
 <?php
  }
  else
-{?>
+{
+$Connection=mysqli_connect('localhost','root','');
+$Selected= mysqli_select_db($Connection,'engineering_buddy');
+$ViewQuery3="SELECT * 
+            FROM softwares
+            Where  id = 1 OR id = 4 OR id = 11 OR id = 10 OR id = 8" ;
+
+$Execute3=$Connection->query($ViewQuery3);
+
+
+while($DataRows3=mysqli_fetch_array($Execute3)){
+  $name=$DataRows3['name'];
+  $Description=$DataRows3['description'];
+  $Link=$DataRows3['link'];
+  $icon=$DataRows3['icon'];
+  $category=$DataRows3['category'];
+  ?>
   
 
+<section>
+  <div class="container">
 
+  <div class="card software">
+    <div class="row">
+      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
+       <img   > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
+      </div>
+      <div class="col-sm-10">
+        <!-- <div class="card-block"> -->
+                      <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
+                      <small class="text-muted"><?php echo $category; ?> </small>
+          <p id="card-spacing"><?php echo $Description; ?> </p>
+          
+        </div>
+         
+      </div>
+
+              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
+            <button type="button" class="download-button"><a href="<?php echo $Link; ?>"></a> Download</button>
+</div>
+          
+  </div>
+   <div style="padding:10px;"></div>
+</div>
+</section>
 
 
 
 
 
 <?php }
+}
  ?>
 
 
