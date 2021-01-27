@@ -30,7 +30,9 @@ if($Connection){
   echo "ABCD";
 }
 
-  $query ="SELECT * FROM technews";
+  $query ="SELECT * 
+          FROM technews
+           ORDER BY id DESC   ";
   $result = mysqli_query($Connection,$query);
 
   if(!$result){
