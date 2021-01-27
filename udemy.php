@@ -1,6 +1,4 @@
-
-
-   <?php
+ <?php
      $page = "udemy.php";
     include 'NavBar/header.php' ?> 
    <?php 
@@ -221,9 +219,63 @@ while($DataRows=mysqli_fetch_array($Execute1)){
   
 <?php
  }
+ else{
  ?>
 
   
+   
+<?php
+  $Connection=mysqli_connect('localhost','root','');
+$Selected= mysqli_select_db($Connection,'engineering_buddy');
+
+$ViewQuery6="SELECT * 
+            FROM udemy
+            Where id = 4 OR id = 26 OR id = 77 OR id = 55 OR id = 52" ;
+
+$Execute6=$Connection->query($ViewQuery6);
+
+while($DataRows6=mysqli_fetch_array($Execute6)){
+  $CourseName=$DataRows6['course_name'];
+  $Link=$DataRows6['link'];
+  $AuthorName=$DataRows6['author_name'];
+  $Hours=$DataRows6['hours'];
+  $Rating=$DataRows6['rating'];
+  $Image=$DataRows6['image'];
+  $Description=$DataRows6['description'];
+
+ ?>
+
+  <section> 
+ <div class="container">
+  <div class="card" style="width:900px;">
+    <div class="row ">
+      <div class="col-sm-4">
+        <img  > <?php echo ' <img style = "width: 300px; height: 190px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($Image).'"/> ' ; ?>
+      </div>
+
+      <div class="col-sm-8">
+        <div class="card-block">
+                  <h3 id="card-spacing" class="card-title"><?php echo $CourseName ;?></h3>
+          <p id="card-spacing"><?php echo $Description ;?><br><small class="text-muted"><?php echo  $AuthorName ;?></small>  </p>
+          <div style="margin-top: 10px; margin-bottom:7px;" > 
+          <p class="fa fa-star checked"></p><?php echo $Rating ;?></div>
+        
+          <p id="card-spacing" style="margin-bottom: 3px;"><small class="text-muted"><?php echo $Hours ;?> total hours</small></p>
+          <a href="<?php echo $Link ;?>" class="stretched-link"></a>
+     </div>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+   </section> 
+
+
+   <?php
+ }}
+ ?>
+
 
    <?php
      
