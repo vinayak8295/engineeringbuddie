@@ -216,11 +216,52 @@ $image = "https://drive.google.com/thumbnail?id=".$newstring;
 ?>
   
 <?php
- }
+ }else
+ {
+  $Connection=mysqli_connect('localhost','root','');
+$Selected= mysqli_select_db($Connection,'engineering_buddy');
+
+$ViewQuery5="SELECT * 
+            FROM compilers
+            Where name = 'VS Code' OR name = 'Code::Blocks ' OR name = 'NetBeans' OR name = 'PyCharm' OR name = 'Turbo C++ (for beginners)'  " ;
+
+$Execute5=$Connection->query($ViewQuery5);
+while($DataRows5=mysqli_fetch_array($Execute5)){
+   
+  $name=$DataRows5['name'];
+  $Description=$DataRows5['description'];
+  $Link=$DataRows5['link'];
+  $image=$DataRows5['image'];
+  $category=$DataRows5['category'];
+  $rank=$DataRows5['rank'];
+
+ $newstring = $image ; 
+
+$newstring = substr($newstring, 0, strlen($newstring) - 17);
+$newstring = substr($newstring, 32, strlen($newstring) - 0);
+
+$image = "https://drive.google.com/thumbnail?id=".$newstring;
  ?>
 
+   <section>
+<div class="container">
+  <div class="card">
+<div class="row">
+<div class="col-lg-12 col-md-6">
+  <h2><?php echo $name; ?> </h2> 
+  <img src="<?php echo $image; ?>" alt="Denim Jeans" style="width:490px; height: 350px; padding: 10px;padding-left:20%; margin-bottom: 10px;">
+  <p id="main-content"><?php echo $Description; ?></p>
   
+</div>
+
+</div>
+<button type="button" class="download-button"><a href="<?php echo $Link; ?>">Download</a></button>
+</div>
+</div>
+</section>
+<div style="margin-bottom:15px "></div>
 
    <?php
-     
+ }
+    } 
     include 'NavBar/footer.php' ?> 
