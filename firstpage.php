@@ -11,12 +11,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style type="text/css">
-  .col-md-6{
-    padding-top: 20px;
-  }
-  .doublecards{
-    padding-left: 50px;
-  }
 </style>
 </head>
 <body >
@@ -54,14 +48,121 @@
 </div>
 </div>
 
+<section>
+  <div class="container">
+    <div class="row" style=" margin-left: -25%; padding-top: 30px;">
+    <!--   <div class="col-lg-12"> -->
+    <div class="card" style=" width:90%; height:500px; border: 1px solid red;">
+    
+   <div class="jumbotron" style="background: url(pythonlogo.png) no-repeat; background-size: 100%;">
+    <div class="row">
+    <div class="col-sm-8">
+  <h1 class="display-4"><strong>COURSES</strong></h1>
+  <p class="lead"><strong>The most useful courses which helps you to grow more in your engineering career...</strong>
+</p>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+<div class="col-sm-4 ">
+<div class="card" style="width:300px; height:420px; background: url(FirstPage/taylor.png) no-repeat; ">
+  <!-- <img class="card-img-top" src="antivirus.jpg" alt="Card image cap"> -->
+  <div class="card-body">
+    <h5 class="card-title display-4" style="text-align: center;"><strong>Softwares</strong></h5>
+   <div style="padding-top: 25px;">
+   <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong style="font-size:1.2em;">P</strong><strong>ython</strong> </button></div>
+    <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>Productivity</strong></button></div>
+    <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>TextEditors</strong></button></div>
+    <div style="padding-top: 10px;">  
+     <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>Browsers</strong></button></div>
+    <div style="padding-top: 10px;">   
+   
+     </div></div>
+</div>
+</div>
+</div>
+    </div>
+ 
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 
 
+<div class="container-fluid">
+<div class="row" style="margin-left: -11%; padding-top: 25px;">
+  <div class="col-lg-6">
+    <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(coursesample.jpg) no-repeat; background-size: 130%;">
+      <div class="row">
+      <div class="col-lg-5">
+         <h1 class="display-4"><strong>COURSES</strong></h1>
+  <p class="lead" style="padding-left: 10px;"><strong>The most useful courses which helps you to grow more in your engineering career...</strong>
+</p>
+      </div>
+      <div class="col-lg-7">
+      <div class="card" style="width:300px; height:420px; background: url(VPN.jpg) no-repeat;">
+  <div class="card-body">
+    <h5 class="card-title display-4" style="text-align: center;"><strong>Courses</strong></h5>
+   <div style="padding-top: 25px;">
+   <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>Python</strong> </button></div>
+    <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>Java</strong></button></div>
+    <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+    <div style="padding-top: 10px;">  
+     <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+    <div style="padding-top: 10px;">   
+   
+     </div></div>
+</div>
+</div>
 
+</div>
+</div>
+</div>
+  </div>
+    <div class="col-lg-4">
+   <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(coursesample.jpg) no-repeat; background-size: 130%;">
+      <div class="row" style="">
+      <div class="col-lg-5">
+         <h1 class="display-4"><strong>COURSES</strong></h1>
+  <p class="lead" style="padding-left: 10px;"><strong>The most useful courses which helps you to grow more in your engineering career...</strong>
+</p>
+      </div>
+      <div class="col-lg-7">
+      <div class="card" style="width:300px; height:420px; background: url(VPN.jpg) no-repeat;">
+  <div class="card-body">
+    <h5 class="card-title display-4" style="text-align: center;"><strong>Courses</strong></h5>
+   <div style="padding-top: 25px;">
+   <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>Python</strong> </button></div>
+    <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>Java</strong></button></div>
+    <div style="padding-top: 10px;">    
+    <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+    <div style="padding-top: 10px;">  
+     <button type="button" class="btn btn-light btn-block" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+    <div style="padding-top: 10px;">   
+   
+     </div></div>
+</div>
+</div>
 
+</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
 
-<?php include 'crouselcards.php' ?>
 
 
 
