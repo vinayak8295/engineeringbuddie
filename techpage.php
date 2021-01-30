@@ -90,23 +90,33 @@ while($row = mysqli_fetch_assoc($query)){
 
  ?>
 
-<div class="container">
-	<div class="card" style="width:400px; height: 700px; border:2px solid grey;">
-		<div class="row" style="height:60%; ">
-			<img  class="container-fluid" style="width:40px; height: 5px;" > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
-			
-			</div>
-			<div class="row" style="height: 40%; ">
-				<div class="card-body">
-				<p class="text-muted"><?php echo $category; ?></p>
-				<p><?php echo $Description; ?> </p>
-				<p class="strong"><?php echo $price; ?>Rs</p>
-				<button type="button" class="btn btn-primary"><a class="nav-link active" href="<?php echo $Link; ?>" target  = "_blank"></a>Buy</button>
-			</div>
-		</div>
-	</div>
+<section>
+  <div class="container">
+  <div class="card" style="margin-left:15%; height:220px;">
+    <div class="row">
+      <div class="col-sm-3 d-block w-100" style="text-align: center; padding-top:5%" >
+       <img  > <?php echo ' <img style = "width: 150px; height: 150px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
+      </div>
+      <div class="col-sm-9">
+        <!-- <div class="card-block"> -->
+                      <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
+                      <small class="text-muted"><?php echo $category; ?> </small>
+          <p id="card-spacing"><?php echo $Description; ?> </p>
+          
+        </div>
 
+
+      </div>
+
+              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
+            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Buy Now</a></button>
 </div>
+          
+  </div>
+  <div style="padding: 10px;"></div>
+</div>
+</section>
+
 
 <?php  
  
@@ -162,24 +172,33 @@ while($DataRows=mysqli_fetch_array($Execute1)){
 
 ?>
 
+<section>
+  <div class="container">
+  <div class="card" style="margin-left:15%; height:220px;">
+    <div class="row">
+      <div class="col-sm-3 d-block w-100" style="text-align: center; padding-top:5%" >
+       <img  > <?php echo ' <img style = "width: 150px; height: 150px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
+      </div>
+      <div class="col-sm-9">
+        <!-- <div class="card-block"> -->
+                      <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
+                      <small class="text-muted"><?php echo $category; ?> </small>
+          <p id="card-spacing"><?php echo $Description; ?> </p>
+          
+        </div>
 
-<div class="container">
-	<div class="card" style="width:400px; height: 450px; border:2px solid grey;">
-		<div class="row" style="height:60%; ">
-			<img  class="container-fluid" style="width:40px; height: 5px;" > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
-			
-			</div>
-			<div class="row" style="height: 40%; ">
-				<div class="card-body">
-				<p class="text-muted"><?php echo $category; ?></p>
-				<p><?php echo $Description; ?> </p>
-				<p class="strong"><?php echo $price; ?>Rs</p>
-				<button type="button" class="btn btn-primary"><a class="nav-link active" href="<?php echo $Link; ?>" target  = "_blank"></a>Buy</button>
-			</div>
-		</div>
-	</div>
 
+      </div>
+
+              <div style="text-align:right; padding-right:10px; padding-top: 5px;">
+            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Buy Now</a></button>
 </div>
+          
+  </div>
+  <div style="padding: 10px;"></div>
+</div>
+</section>
+
 
 
 <?php }
@@ -215,12 +234,12 @@ while($DataRows3=mysqli_fetch_array($Execute3)){
 
 <section>
   <div class="container">
-  <div class="card software" style="margin-left:15%;">
+  <div class="card" style="margin-left:15%; height:220px;">
     <div class="row">
-      <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
-       <img  > <?php echo ' <img style = "width: 150px; height: 200px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
+      <div class="col-sm-3 d-block w-100" style="text-align: center; padding-top:5%" >
+       <img  > <?php echo ' <img style = "width: 150px; height: 150px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
       </div>
-      <div class="col-sm-10">
+      <div class="col-sm-9">
         <!-- <div class="card-block"> -->
                       <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
                       <small class="text-muted"><?php echo $category; ?> </small>
@@ -232,7 +251,7 @@ while($DataRows3=mysqli_fetch_array($Execute3)){
       </div>
 
               <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Download</a></button>
+            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Buy Now</a></button>
 </div>
           
   </div>
