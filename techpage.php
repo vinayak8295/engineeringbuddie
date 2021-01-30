@@ -25,6 +25,64 @@
 <link rel="stylesheet" type="text/css" href="udemy.css">
 <link rel="stylesheet" type="text/css" href="firstpage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<style type="text/css">
+  .button {
+  /* text styles */
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  
+  /* box styles */
+  display: inline-block;
+  height: 25px;
+  padding: 0 10px;
+  border: 1px solid;
+  border-color: #2d86b6 #24659e #255796;
+  border-radius: 21px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(1, 4, 8, 0.2);
+  
+  /* gradients */
+  background-color: #52b6ec;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF52B6EC', endColorstr='#FF2E75CE');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #52b6ec), color-stop(100%, #2e75ce));
+  background-image: -webkit-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: -moz-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: -o-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+    
+}
+.button:hover {
+  text-decoration: none;
+  border-color: #377cae #175a9c #0c4893;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(5, 64, 140, 0.2);
+  
+  background-color: #4fa6e4;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4FA6E4', endColorstr='#FF1462C4');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4fa6e4), color-stop(100%, #1462c4));
+  background-image: -webkit-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: -moz-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: -o-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+}
+.button:active {
+  border-color: #094b84 #094b84 #0f4585;
+  box-shadow: 0 1px 1px rgba(241, 243, 247, 0.2), 0 0 20px rgba(0, 0, 0, 0.5) inset;
+  
+  background-color: #1c7ec9;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1C7EC9', endColorstr='#FF2395D9');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c7ec9), color-stop(100%, #2395d9));
+  background-image: -webkit-linear-gradient(top, #1c7ec9 0%, #2395d9 100%);
+  background-image: -moz-linear-gradient(top, #1c7ec9 0%, #2395d9 100%);
+  background-image: -o-linear-gradient(top, #1c7ec9 0%, #2395d9 100%);
+  background-image: linear-gradient(top, #1c7ec9 0%, #2395d9 100%);
+}
+
+</style>
 </head>
 <body>
  
@@ -90,6 +148,7 @@ while($row = mysqli_fetch_assoc($query)){
 
  ?>
 
+
 <section>
   <div class="container">
   <div class="card" style="margin-left:15%; height:220px;">
@@ -101,7 +160,7 @@ while($row = mysqli_fetch_assoc($query)){
         <!-- <div class="card-block"> -->
                       <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
                       <small class="text-muted"><?php echo $category; ?> </small>
-          <p id="card-spacing"><?php echo $Description; ?> </p>
+          <p id="card-spacing" style="padding-top: 10px;"><?php echo $Description; ?> </p>
           
         </div>
 
@@ -109,7 +168,7 @@ while($row = mysqli_fetch_assoc($query)){
       </div>
 
               <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Buy Now</a></button>
+           <p><a href="<?php echo $Link; ?>" class="button"><strong>Shop Now</strong></a></p>
 </div>
           
   </div>
@@ -183,7 +242,7 @@ while($DataRows=mysqli_fetch_array($Execute1)){
         <!-- <div class="card-block"> -->
                       <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
                       <small class="text-muted"><?php echo $category; ?> </small>
-          <p id="card-spacing"><?php echo $Description; ?> </p>
+          <p id="card-spacing" style="padding-top: 10px;"><?php echo $Description; ?> </p>
           
         </div>
 
@@ -191,7 +250,7 @@ while($DataRows=mysqli_fetch_array($Execute1)){
       </div>
 
               <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Buy Now</a></button>
+           <p><a href="<?php echo $Link; ?>" class="button"><strong>Shop Now</strong></a></p>
 </div>
           
   </div>
@@ -243,7 +302,7 @@ while($DataRows3=mysqli_fetch_array($Execute3)){
         <!-- <div class="card-block"> -->
                       <h1 id="card-spacing" class="card-title"> <?php echo $name; ?> </h1>
                       <small class="text-muted"><?php echo $category; ?> </small>
-          <p id="card-spacing"><?php echo $Description; ?> </p>
+          <p id="card-spacing" style="padding-top: 10px;"><?php echo $Description; ?> </p>
           
         </div>
 
@@ -251,7 +310,7 @@ while($DataRows3=mysqli_fetch_array($Execute3)){
       </div>
 
               <div style="text-align:right; padding-right:10px; padding-top: 5px;">
-            <button type="button" class="download-button"><a href="<?php echo $Link; ?>">Buy Now</a></button>
+           <p><a href="<?php echo $Link; ?>" class="button"><strong>Shop Now</strong></a></p>
 </div>
           
   </div>
