@@ -80,7 +80,7 @@ while($row = mysqli_fetch_assoc($query)){
 
 <section>
   <div class="container">
-  <div class="card software" style="margin-left:15%;">
+  <div class="card" style="margin-left:15%;">
     <div class="row">
       <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
        <img   > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>

@@ -54,7 +54,7 @@
     <!--   <div class="col-lg-12"> -->
     <div class="card" style=" width:90%; height:500px; border: 1px solid red;">
     
-   <div class="jumbotron" style="background: url(pythonlogo.png) no-repeat; background-size: 100%;">
+   <div class="jumbotron" style="background: url(courses.jpg) no-repeat; background-size: 100%;">
     <div class="row">
     <div class="col-sm-8">
   <h1 class="display-4"><strong>COURSES</strong></h1>
@@ -66,7 +66,7 @@
   </p>
 </div>
 <div class="col-sm-4 ">
-<div class="card" style="width:300px; height:420px; background: url(FirstPage/taylor.png) no-repeat; ">
+<div class="card" style="width:300px; height:420px; background: transparent; no-repeat; ">
   <!-- <img class="card-img-top" src="antivirus.jpg" alt="Card image cap"> -->
   <div class="card-body">
     <h5 class="card-title display-4" style="text-align: center;"><strong>Softwares</strong></h5>
@@ -99,7 +99,7 @@
 <div class="container-fluid">
 <div class="row" style="margin-left: -11%; padding-top: 25px;">
   <div class="col-lg-6">
-    <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(coursesample.jpg) no-repeat; background-size: 130%;">
+    <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(programming.png) no-repeat; background-size: 102%;">
       <div class="row">
       <div class="col-lg-5">
          <h1 class="display-4"><strong>COURSES</strong></h1>
@@ -130,7 +130,7 @@
 </div>
   </div>
     <div class="col-lg-4">
-   <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(coursesample.jpg) no-repeat; background-size: 130%;">
+   <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(texteditor.png) no-repeat; background-size: 100%;">
       <div class="row" style="">
       <div class="col-lg-5">
          <h1 class="display-4"><strong>COURSES</strong></h1>
