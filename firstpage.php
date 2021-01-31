@@ -99,7 +99,7 @@
 <div class="container-fluid">
 <div class="row" style="margin-left: -11%; padding-top: 25px;">
   <div class="col-lg-6">
-    <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(programming.png) no-repeat; background-size: 102%;">
+    <div class="card" style=" height:500px; padding-top: 20px;  border: 2px solid grey; background: url(programming.png) no-repeat; background-size: 110%;">
       <div class="row">
       <div class="col-lg-5">
          <h1 class="display-4"><strong>COURSES</strong></h1>
