@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    .card{
+    /*font-size: 1em;*/
+    overflow: hidden;
+    /*padding: 5;*/
+  
+   
+    /*margin-top:20px;*/
+    margin-left: 7%;
+    width: 800px;
+   }
+  </style>
+  <title></title>
+</head>
+<body>
+
 
 <?php include 'NavBar/newscard.php' ?>
 <?php
@@ -265,3 +284,5 @@ $image = "https://drive.google.com/thumbnail?id=".$newstring;
  }
     } 
     include 'NavBar/footer.php' ?> 
+    </body>
+</html>
