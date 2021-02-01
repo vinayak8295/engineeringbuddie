@@ -26,6 +26,17 @@
 <link rel="stylesheet" type="text/css" href="firstpage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 <style type="text/css">
+
+.card{
+    /*font-size: 1em;*/
+    overflow: hidden;
+    /*padding: 5;*/
+  
+   
+    /*margin-top:20px;*/
+    margin-left: 7%;
+    width: 800px;
+   }
   .button {
   /* text styles */
   font-size: 17px;
@@ -151,7 +162,7 @@ while($row = mysqli_fetch_assoc($query)){
 
 <section>
   <div class="container">
-  <div class="card" style="margin-left:15%; height:220px;">
+  <div class="card" style=" height:220px;">
     <div class="row">
       <div class="col-sm-3 d-block w-100" style="text-align: center; padding-top:5%" >
        <img  > <?php echo ' <img style = "width: 150px; height: 150px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
@@ -233,7 +244,7 @@ while($DataRows=mysqli_fetch_array($Execute1)){
 
 <section>
   <div class="container">
-  <div class="card" style="margin-left:15%; height:220px;">
+  <div class="card" style=" height:220px;">
     <div class="row">
       <div class="col-sm-3 d-block w-100" style="text-align: center; padding-top:5%" >
        <img  > <?php echo ' <img style = "width: 150px; height: 150px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
@@ -257,8 +268,6 @@ while($DataRows=mysqli_fetch_array($Execute1)){
   <div style="padding: 10px;"></div>
 </div>
 </section>
-
-
 
 <?php }
 }
@@ -293,7 +302,7 @@ while($DataRows3=mysqli_fetch_array($Execute3)){
 
 <section>
   <div class="container">
-  <div class="card" style="margin-left:15%; height:220px;">
+  <div class="card" style=" height:220px;">
     <div class="row">
       <div class="col-sm-3 d-block w-100" style="text-align: center; padding-top:5%" >
        <img  > <?php echo ' <img style = "width: 150px; height: 150px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>

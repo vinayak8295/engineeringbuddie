@@ -1,3 +1,26 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+     
+.card{
+    /*font-size: 1em;*/
+    overflow: hidden;
+    /*padding: 5;*/
+  
+   
+    /*margin-top:20px;*/
+    margin-left: 7%;
+    width: 800px;
+   }
+  </style>
+  <title></title>
+</head>
+<body>
+
+
+
  <?php
      $page = "udemy.php";
     include 'NavBar/header.php' ?> 
@@ -66,7 +89,7 @@ while($row = mysqli_fetch_assoc($query1)){
  ?>
  <section> 
  <div class="container">
-  <div class="card" style="width:900px;">
+  <div class="card" id="udemy" style="width:900px;">
     <div class="row ">
       <div class="col-sm-4">
         <img  > <?php echo ' <img style = "width: 300px; height: 190px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($Image).'"/> ' ; ?>
@@ -87,6 +110,7 @@ while($row = mysqli_fetch_assoc($query1)){
       
     </div>
   </div>
+  <div style="padding-bottom: 10px;"></div>
 </div>
    </section> 
 
@@ -137,8 +161,9 @@ elseif ($result_count1) {
       
     </div>
   </div>
+  <div style="padding-bottom: 10px;"></div>
 </div>
-   </section> 
+   </section>  
  <?php  }
   
 }
@@ -183,9 +208,9 @@ while($DataRows=mysqli_fetch_array($Execute1)){
   $Description=$DataRows['description'];
 ?>
  
-<section> 
+ <section> 
  <div class="container">
-  <div class="card">
+  <div class="card" style="width:900px;">
     <div class="row ">
       <div class="col-sm-4">
         <img  > <?php echo ' <img style = "width: 300px; height: 190px;margin-top:-19px;margin-left: 3px;"  src="data:image/jpg;base64,'.base64_encode($Image).'"/> ' ; ?>
@@ -206,9 +231,9 @@ while($DataRows=mysqli_fetch_array($Execute1)){
       
     </div>
   </div>
+  <div style="padding-bottom: 10px;"></div>
 </div>
    </section> 
-
 
 <?php }
 }
@@ -222,7 +247,8 @@ while($DataRows=mysqli_fetch_array($Execute1)){
  else{
  ?>
 
-  
+  </body>
+  </html>
    
 <?php
   $Connection=mysqli_connect('localhost','root','');
@@ -268,9 +294,9 @@ while($DataRows6=mysqli_fetch_array($Execute6)){
       
     </div>
   </div>
+  <div style="padding-bottom: 10px;"></div>
 </div>
    </section> 
-
 
    <?php
  }}

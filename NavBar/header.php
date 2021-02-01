@@ -38,18 +38,6 @@ background-color: #D8D8D8;
   margin-bottom: -3px;
 }
 
-.card {
-    /*font-size: 1em;*/
-    overflow: hidden;
-    /*padding: 5;*/
-    border: none;
-    border-radius: .28571429rem;
-    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-    /*margin-top:20px;*/
-    margin-left: 18%;
-   width:700px;
-}
-
 
 .download-button{
  width:20%; 

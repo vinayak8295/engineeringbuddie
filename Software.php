@@ -14,6 +14,19 @@
 <link rel="stylesheet" type="text/css" href="assets/software.css"> 
 <!-- <link rel="stylesheet" type="text/css" href="page2.css">
  <link rel="stylesheet" type="text/css" href="sidebar.css"> -->
+ <style type="text/css">
+   
+.card{
+    /*font-size: 1em;*/
+    overflow: hidden;
+    /*padding: 5;*/
+  
+   
+    /*margin-top:20px;*/
+    margin-left: 7%;
+    width: 800px;
+   }
+ </style>
 </head>
 <body onload="openNav()">
 
@@ -80,7 +93,7 @@ while($row = mysqli_fetch_assoc($query)){
 
 <section>
   <div class="container">
-  <div class="card" style="margin-left:15%;">
+  <div class="card" style="margin-left:15%; width: 800px;">
     <div class="row">
       <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
        <img   > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>
