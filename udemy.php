@@ -11,7 +11,7 @@
   
    
     /*margin-top:20px;*/
-    margin-left: 7%;
+    margin-left: 3%;
     width: 800px;
    }
   </style>
@@ -20,7 +20,7 @@
 <body>
 
 
-
+<?php include 'freecoursecard.php'?>
  <?php
      $page = "udemy.php";
     include 'NavBar/header.php' ?> 
@@ -301,6 +301,8 @@ while($DataRows6=mysqli_fetch_array($Execute6)){
    <?php
  }}
  ?>
+
+
 
 
    <?php
