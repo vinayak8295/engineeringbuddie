@@ -12,7 +12,9 @@
     <!-- main content -->
  <?php
     include 'NavBar/header.php' ?> 
-   <?php include 'sidebar.php' ?>
+   <?php include 'moviesidebar.php' ?>
+
+
 
 <?php 
 // query the user media
