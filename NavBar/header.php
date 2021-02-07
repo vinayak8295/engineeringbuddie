@@ -26,9 +26,7 @@
 <link rel="stylesheet" type="text/css" href="firstpage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
  <style >
-
    .navbar-custom{
-  }
 background-color: #D8D8D8;
 }
 .navbar-custom .navbar-item{
@@ -193,7 +191,7 @@ background-color: #D8D8D8;
         <input type="search" class="search-hover d-flex justify-content-end searchbar" name="keywords" aria-label="search" placeholder="search here...">
     </form>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="firstpage.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
          <a class="nav-link active" aria-current="page" href="techpage.php">Tech Geek</a> 

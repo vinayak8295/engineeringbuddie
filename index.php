@@ -177,10 +177,7 @@
 
 
 
-<footer style="text-align: right; height: 50px; padding: 3px; background-color: DarkSalmon; color: white;">
- <li>ABCd</li>
- <li>aBCD</li>
-</footer>
+<?php include 'footer/footer.php' ?>
 
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="NavBar/firstpage.js"></script>
