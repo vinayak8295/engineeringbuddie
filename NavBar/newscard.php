@@ -42,11 +42,9 @@ if($Connection){
  ?>
 
 
-<div class="card fixed-bottom" style="margin-left: 79%;margin-top: 60%;">
-<iframe src="https://discord.com/widget?id=742050523619917854&theme=light" width="300" height="270" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-</div>
+
   
-  <div class="card fixed-top" style="width: 300px; height: 350px; margin-top: 6%; margin-left: 79%; border: 2px solid black; float: right; ">
+  <div class="card fixed-top" style="width: 300px; height: 100%; margin-top: 6%; margin-left: 79%; border: 2px solid black; float: right; ">
 
 <?php
 
@@ -58,7 +56,7 @@ while ($row=mysqli_fetch_assoc($result)) {
   $i++;
 ?>
   <?php if($i<=5){ ?>
-    <div class="row" style="height: 20%; border-top: 1px solid #e0e0e0;;">
+    <div class="row" style="height:12%; border-top: 1px solid #e0e0e0;;">
       <div class="col-sm-2" style="">
         <img ><?php echo ' <img style="width:70px; height:40px;  " src="data:image/jpg;base64,'.base64_encode($image).'"/> ' ; ?>
       </div>

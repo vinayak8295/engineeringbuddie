@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+     .card{
+    /*font-size: 1em;*/
+    overflow: hidden;
+    /*padding: 5;*/
+  
+   
+    /*margin-top:20px;*/
+    margin-left: 7%;
+    width: 800px;
+   }
+  </style>
+</head>
+<body>
+
+
+<?php include 'NavBar/newscard.php' ?>
 <?php
  $page = "compilercard.php";
  include 'NavBar/header.php' ?>
@@ -222,3 +243,5 @@ $image = "https://drive.google.com/thumbnail?id=".$newstring;
    <?php
      
     include 'NavBar/footer.php' ?> 
+  </body>
+  </html>

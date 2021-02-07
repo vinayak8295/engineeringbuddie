@@ -2,25 +2,31 @@
 <html>
 <head>
   <title>Software</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Hanalei+Fill&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="assets/software.css"> 
+
+
+  <style type="text/css">
+    .card{
+    /*font-size: 1em;*/
+    overflow: hidden;
+    /*padding: 5;*/
+  
+   
+    /*margin-top:20px;*/
+    margin-left: 7%;
+    width: 800px;
+   }
+  </style>
 <!-- <link rel="stylesheet" type="text/css" href="page2.css">
  <link rel="stylesheet" type="text/css" href="sidebar.css"> -->
 </head>
 <body onload="openNav()">
 
+  <?php include 'NavBar/newscard.php' ?>
 
    <?php
      $page = "Software.php";
     include 'NavBar/header.php' ?> 
+
    <?php 
     $side1 = "Google Chrome";
     $side2 = "VLC";
@@ -79,7 +85,7 @@ while($row = mysqli_fetch_assoc($query)){
 
 <section>
   <div class="container">
-  <div class="card software">
+  <div class="card software" id="ABcd">
     <div class="row">
       <div class="col-sm-2 d-block w-100" style="text-align: center; padding-top:3%" >
        <img   > <?php echo ' <img src="data:image/jpg;base64,'.base64_encode($icon).'"/> ' ; ?>

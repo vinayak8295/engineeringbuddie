@@ -26,6 +26,7 @@
     margin-left: 7%;
     width: 800px;
    }
+  
  </style>
 </head>
 <body onload="openNav()">

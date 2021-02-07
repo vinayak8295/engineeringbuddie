@@ -36,7 +36,19 @@
 </div>
 </div>
 <div style="margin-top: 8%;"></div>
-
+<div class="card " style="border: 2px solid red; float:right; width: 400px; margin-top:-3%; height: 100%; margin-left:70%; position: fixed;">
+    <h1>Bad Movies</h1>
+    <div class="row" style="height: 160px; ">
+        <div class="col-sm-4">
+            <img src="sourcecode.jfif" style="height: 158px; width:120px;">
+        </div>
+        <div class="col-sm-8">
+            <h1>Movie name</h1>
+            <h3>Movie Gonra</h3>
+            <h5>Movie rating</h5>
+            <button class="btn btn-primary">Read Review</button>
+        </div>
+       </div>
 
 </div>
 

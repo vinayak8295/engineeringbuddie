@@ -26,7 +26,9 @@
 <link rel="stylesheet" type="text/css" href="firstpage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
  <style >
+
    .navbar-custom{
+  }
 background-color: #D8D8D8;
 }
 .navbar-custom .navbar-item{
