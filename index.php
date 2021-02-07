@@ -69,7 +69,7 @@
 </p>
   <hr class="my-4">
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="udemy.php" role="button">Learn more</a>
   </p>
 </div>
 <div class="col-sm-4 ">
@@ -79,13 +79,13 @@
     <h5 class="card-title display-4" style="text-align: center;"><strong>Top Skills</strong></h5>
    <div style="padding-top: 25px;">
    <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>C++</strong></button></div>
+    <a href="getudemy.php?keywords=datastructure"><button type="button" class="btn btn-light btn-block"  id="mainbutton" style="padding: 10px;"><strong >DS algo</strong></button></div></a>
     <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Pyhton</strong></button></div>
+    <a href="getudemy.php?keywords=python"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong >Pyhton</strong></button></div></a>
     <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>WEB-DEV</strong></button></div>
+    <a href="getudemy.php?keywords=web development"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>WEB-DEV</strong></button></div></a>
     <div style="padding-top: 10px;">  
-     <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Java</strong></button></div>
+    <a href="getudemy.php?keywords=machine learning"> <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>ML</strong></button></div></a>
     <div style="padding-top: 10px;">   
    
      </div></div>
@@ -119,13 +119,13 @@
     <h5 class="card-title display-4" style="text-align: center;"><strong>Courses</strong></h5>
    <div style="padding-top: 25px;">
    <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Python</strong> </button></div>
+    <a href="getSoftware.php?keywords=browsers"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Browsers</strong> </button></div></a>
     <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Java</strong></button></div>
+    <a href="getSoftware.php?keywords=programming"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Programming</strong></button></div></a>
     <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+    <a href="getSoftware.php?keywords=must have"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Must Have</strong></button></div></a>
     <div style="padding-top: 10px;">  
-     <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+     <a href="getSoftware.php?keywords=media player"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Media player</strong></button></div></a>
     <div style="padding-top: 10px;">   
    
      </div></div>
@@ -150,13 +150,13 @@
     <h5 class="card-title display-4" style="text-align: center;"><strong>Courses</strong></h5>
    <div style="padding-top: 25px;">
    <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Python</strong> </button></div>
+    <a href="getcompilercard.php?keywords=vs"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>VsCode</strong> </button></div></a>
     <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Java</strong></button></div>
+    <a href="getcompilercard.php?keywords=intellij IDEA"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>IntelliJ IDEA</strong></button></div></a>
     <div style="padding-top: 10px;">    
-    <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+    <a href="getcompilercard.php?keywords=turbo"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>TurboC++</strong></button></div></a>
     <div style="padding-top: 10px;">  
-     <button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>MarJawa</strong></button></div>
+     <a href="getcompilercard.php?keywords=pycharm"><button type="button" class="btn btn-light btn-block" id="mainbutton" style="padding: 10px;"><strong>Pycharm</strong></button></div></a>
     <div style="padding-top: 10px;">   
    
      </div></div>
