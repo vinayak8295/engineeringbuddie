@@ -24,7 +24,8 @@
 <section>
 <div id="mySidepanel" class="sidepanel" style="margin-top:4.8%">
   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-  <div style="margin-top: 10%;">
+  <!-- <div style="margin-top: 10%;"> -->
+    <a >Movie/tvseries of the month</a>
 
 <?php
 $Connection=mysqli_connect('localhost','root','');
@@ -52,7 +53,7 @@ $Image = "https://drive.google.com/thumbnail?id=".$newstring;
 ?>
   <a href="<?php echo $Link; ?>" class="active"><?php echo $Name; ?></a>
   <img src="<?php echo $Image; ?>" alt="Denim Jeans" style="width:150px; height: 250px; padding-left:3%; margin-bottom: 10px;">
-  <a href="<?php echo $Link; ?>" class="active"><?php echo $Description; ?></a>
+  <!-- <a href="<?php echo $Link; ?>" class="active"><?php echo $Description; ?></a> -->
   
   <?php }?>
 </div>

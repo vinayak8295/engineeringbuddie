@@ -13,6 +13,7 @@
  <?php
     include 'NavBar/header.php' ?> 
    <?php include 'sidebar_movies.php' ?>
+   <?php include 'moviesidebar.php' ?>
 
 <?php 
 // query the user media
