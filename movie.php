@@ -25,7 +25,7 @@ $json_feed_url="https://graph.instagram.com/me/media?fields={$fields}&access_tok
 $json_feed = @file_get_contents($json_feed_url);
 $contents = json_decode($json_feed, true, 512, JSON_BIGINT_AS_STRING);
  
-echo "<div class='card' style='width:50%;margin-left:18%;'>";
+echo "<div class='card' style='width:50%;margin-left:20.5%;'>";
     foreach($contents["data"] as $post){
         $username = isset($post["username"]) ? $post["username"] : "";
          $caption =      isset($post["caption"]) ? $post["caption"] : "";

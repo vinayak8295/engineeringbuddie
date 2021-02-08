@@ -172,7 +172,7 @@
 
 
 <div class="container-fluid">
-  <img src="texteditor.png" style="height: 500px; width: 100%; padding-top: 20px;">
+  <img src="texteditor.png" style="padding-bottom:50px;padding-top: 50px; height: 500px; width: 100%; padding-top: 20px;">
 </div>
 
 
