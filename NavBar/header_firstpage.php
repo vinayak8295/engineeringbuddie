@@ -189,7 +189,7 @@ background-color: #D8D8D8;
 
   <nav id="mainnavbar" class="navbar navbar-expand-md navbar-dark fixed-top px-0 navbar-custom"  >
   <div class="container-fluid"> 
-     <a class="navbar-brand" style="font-family: 'Bungee Outline', cursive;"  href="firstpage.php"><p><strong style="font-size: 30px;color:#8A0868; font-family: 'Audiowide', cursive;">E</strong><strong style="color: #6E6E6E; font-family: 'Audiowide', cursive;">gineering</strong><strong style="font-size: 30px; font-family: 'Audiowide', cursive;color: #8A0868">B</strong><strong style="font-family: 'Audiowide', cursive;color: #6E6E6E">uddy</strong></p>
+     <a class="navbar-brand" style="font-family: 'Bungee Outline', cursive;"  href="index.php"><p><strong style="font-size: 30px;color:#8A0868; font-family: 'Audiowide', cursive;">E</strong><strong style="color: #6E6E6E; font-family: 'Audiowide', cursive;">gineering</strong><strong style="font-size: 30px; font-family: 'Audiowide', cursive;color: #8A0868">B</strong><strong style="font-family: 'Audiowide', cursive;color: #6E6E6E">uddy</strong></p>
 </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
       <span class="navbar-toggler-icon"></span>
@@ -203,7 +203,7 @@ background-color: #D8D8D8;
         <input type="search" class="search-hover d-flex justify-content-end searchbar" name="keywords" aria-label="search" placeholder="search here...">
     </form> -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="firstpage.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
 
         <li class="nav-item">
