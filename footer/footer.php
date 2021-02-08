@@ -1,5 +1,30 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style >
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
   .site-footer
 {
   background-color:#26272b;
@@ -164,6 +189,8 @@
   }
 }
 </style>
+</head>
+<body>
   <!-- Site footer -->
     <footer class="site-footer">
       <div class="container">
@@ -202,11 +229,18 @@
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
+         <a href="#">Scanfcode  </a>
+         <a href="" target="_blank"><img style="padding-left: 10px; width: 40px; height: 40px;" src="https://www.flaticon.com/svg/vstatic/svg/145/145802.svg?token=exp=1612811840~hmac=caa5aad9868e9bbda2c5fe61bc951161"></a>
+         <a href="" target="_blank"><img style="padding-left: 10px; width: 40px; height: 40px;" src="https://www.flaticon.com/svg/vstatic/svg/733/733579.svg?token=exp=1612811610~hmac=26a111830f2341087e48c3aebea87219"></a>
+         <a target="_blank" href=""><img style="padding-left: 10px; width:40px; height: 40px;" src="https://www.flaticon.com/svg/vstatic/svg/2111/2111646.svg?token=exp=1612811651~hmac=faa5d985ae6b3129ccb74cdf59587c50"></a>
+       <a href="https://www.google.com/" target="_blank"> <img style="padding-left: 10px; width: 40px; height: 40px;" src="https://www.flaticon.com/svg/vstatic/svg/733/733585.svg?token=exp=1612811693~hmac=708c06f9ecb8e44b476729b0b4d20a02"></a>
             </p>
-          </div>
+            
 
          
         </div>
       </div>
+    </div>
 </footer>
+</body>
+</html>
